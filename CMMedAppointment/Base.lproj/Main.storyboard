@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFH-YM-UZ4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Abeer Group-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Abeer Group" id="BYZ-38-t0r" customClass="ViewController" customModule="CMMedAppointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3I7-Ia-atC" userLabel="bottom tiles">
+                                <rect key="frame" x="0.0" y="420" width="375" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-eN-b67" userLabel="first stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oti-JU-LFt">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fST-n4-dQn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvB-HN-0i4">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="My Doctors">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqP-q1-Hyt">
+                                                <rect key="frame" x="250.5" y="0.0" width="124.5" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Appointments">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-hh-4JG" userLabel="second stack">
+                                        <rect key="frame" x="0.0" y="82.5" width="375" height="82"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69B-0p-aZm">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="82"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Specialities">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-Xw-24Y">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="82"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Doctors">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSK-Gg-VOk">
+                                                <rect key="frame" x="250.5" y="0.0" width="124.5" height="82"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Results">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ey9-9p-uHO" userLabel="third stack">
+                                        <rect key="frame" x="0.0" y="165.5" width="375" height="81.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwd-JF-F2A">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Testimonial">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ify-3v-7sd">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="News &amp; Events">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YF5-AI-36m">
+                                                <rect key="frame" x="250.5" y="0.0" width="124.5" height="81.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="tintColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Feedback">
+                                                    <color key="titleColor" red="0.0" green="0.41568627450000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-ZU-Q5U" userLabel="middle tiles">
+                                <rect key="frame" x="10" y="344" width="355" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbz-Rl-ec7">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="64"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.30196078430000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Packages">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WPP-Zf-K2T" kind="show" id="Uvc-37-yqT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6L-59-Oky">
+                                        <rect key="frame" x="72.5" y="0.0" width="64.5" height="64"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.30196078430000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Health Tips">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEb-Ol-nh6">
+                                        <rect key="frame" x="145" y="0.0" width="65" height="64"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.30196078430000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Route Map">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-dN-xGu">
+                                        <rect key="frame" x="218" y="0.0" width="64.5" height="64"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.30196078430000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Email Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bid-0W-cW6">
+                                        <rect key="frame" x="290.5" y="0.0" width="64.5" height="64"/>
+                                        <color key="backgroundColor" red="0.039215686274509803" green="0.30196078430000001" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Call Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="1CY-ZU-Q5U" secondAttribute="width" multiplier="0.18" id="5Vk-mH-Qc6"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2i-l2-zsF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lr-uA-5DZ" userLabel="DropDownView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-Oh-SSo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                        <connections>
+                                            <segue destination="M5j-zW-R37" kind="popoverPresentation" popoverAnchorView="3gO-Oh-SSo" id="ZcW-AQ-LvP">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Branch Name, Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv3-oj-NRG">
+                                        <rect key="frame" x="0.0" y="15.5" width="375" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pah-U9-uiP">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pah-U9-uiP" secondAttribute="height" id="tlZ-zt-cTz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-0i-Eos">
+                                        <rect key="frame" x="330" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wc3-0i-Eos" secondAttribute="height" id="YYC-2T-xol"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.30196078430000001" blue="0.36862745098039218" alpha="0.79876258389261745" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3gO-Oh-SSo" firstAttribute="leading" secondItem="8lr-uA-5DZ" secondAttribute="leading" id="02k-td-V01"/>
+                                    <constraint firstItem="pah-U9-uiP" firstAttribute="top" secondItem="8lr-uA-5DZ" secondAttribute="top" id="6rE-hC-iXw"/>
+                                    <constraint firstItem="wc3-0i-Eos" firstAttribute="top" secondItem="8lr-uA-5DZ" secondAttribute="top" id="BGZ-r4-aUI"/>
+                                    <constraint firstAttribute="bottom" secondItem="3gO-Oh-SSo" secondAttribute="bottom" id="EpM-mX-P6r"/>
+                                    <constraint firstItem="Yv3-oj-NRG" firstAttribute="centerY" secondItem="8lr-uA-5DZ" secondAttribute="centerY" id="FOx-2U-A4s"/>
+                                    <constraint firstAttribute="height" constant="45" id="KPV-tf-l3W"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yv3-oj-NRG" secondAttribute="trailing" id="TDs-cA-zI1"/>
+                                    <constraint firstAttribute="trailing" secondItem="3gO-Oh-SSo" secondAttribute="trailing" id="W93-0v-IzZ"/>
+                                    <constraint firstItem="pah-U9-uiP" firstAttribute="leading" secondItem="8lr-uA-5DZ" secondAttribute="leading" id="fAs-zB-sN3"/>
+                                    <constraint firstItem="3gO-Oh-SSo" firstAttribute="top" secondItem="8lr-uA-5DZ" secondAttribute="top" id="hyp-t6-7xW"/>
+                                    <constraint firstItem="Yv3-oj-NRG" firstAttribute="leading" secondItem="8lr-uA-5DZ" secondAttribute="leading" id="mpY-pb-Uh2"/>
+                                    <constraint firstAttribute="bottom" secondItem="wc3-0i-Eos" secondAttribute="bottom" id="ufQ-T2-I8H"/>
+                                    <constraint firstAttribute="bottom" secondItem="pah-U9-uiP" secondAttribute="bottom" id="y6p-3f-Zzc"/>
+                                    <constraint firstAttribute="trailing" secondItem="wc3-0i-Eos" secondAttribute="trailing" id="zGd-pB-2Ih"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.41568627450980394" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O2i-l2-zsF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Hb-om-rhT"/>
+                            <constraint firstAttribute="trailing" secondItem="1CY-ZU-Q5U" secondAttribute="trailing" constant="10" id="6Bb-is-9Ks"/>
+                            <constraint firstItem="8lr-uA-5DZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Sm-O5-DlV"/>
+                            <constraint firstItem="8lr-uA-5DZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CBa-3J-yfo"/>
+                            <constraint firstItem="3I7-Ia-atC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NnK-C0-dJf"/>
+                            <constraint firstAttribute="trailing" secondItem="3I7-Ia-atC" secondAttribute="trailing" id="W9C-TO-9U5"/>
+                            <constraint firstItem="3I7-Ia-atC" firstAttribute="top" secondItem="1CY-ZU-Q5U" secondAttribute="bottom" constant="12" id="XDE-Ut-zVc"/>
+                            <constraint firstItem="8lr-uA-5DZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eFe-hM-a2x"/>
+                            <constraint firstItem="1CY-ZU-Q5U" firstAttribute="top" secondItem="O2i-l2-zsF" secondAttribute="bottom" constant="12" id="eLa-bJ-ixs"/>
+                            <constraint firstItem="1CY-ZU-Q5U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="h5C-Dn-3hs"/>
+                            <constraint firstItem="O2i-l2-zsF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="laC-pc-rN4"/>
+                            <constraint firstAttribute="bottom" secondItem="3I7-Ia-atC" secondAttribute="bottom" id="r4o-m7-7fo"/>
+                            <constraint firstItem="O2i-l2-zsF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u7f-bR-oKR"/>
+                            <constraint firstItem="3I7-Ia-atC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.37" id="xg0-yJ-5v5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Abeer Group" id="y7G-1w-YKo">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ntJ-rN-AxU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="SpecialitiesButton" destination="69B-0p-aZm" id="hNC-6x-M3n"/>
+                        <outlet property="appointmentsButton" destination="XqP-q1-Hyt" id="rnw-fZ-smo"/>
+                        <outlet property="callUsButton" destination="Bid-0W-cW6" id="g1U-dG-Sng"/>
+                        <outlet property="doctorsButton" destination="UHi-Xw-24Y" id="3d0-Sx-dvQ"/>
+                        <outlet property="emailUsButton" destination="Inx-dN-xGu" id="7Ax-Nt-xCj"/>
+                        <outlet property="feedbackButton" destination="YF5-AI-36m" id="T5L-sJ-qG6"/>
+                        <outlet property="healthTipsButton" destination="Y6L-59-Oky" id="MJI-sh-2Ay"/>
+                        <outlet property="hospitalImage" destination="O2i-l2-zsF" id="Y15-Qs-xmR"/>
+                        <outlet property="leftIcon" destination="pah-U9-uiP" id="1zo-1C-vVx"/>
+                        <outlet property="memberButton" destination="Oti-JU-LFt" id="VN2-KJ-Ld0"/>
+                        <outlet property="menuBarButton" destination="ntJ-rN-AxU" id="Yo5-Jt-Gnn"/>
+                        <outlet property="myDoctorsButton" destination="cvB-HN-0i4" id="Jgc-bu-eGm"/>
+                        <outlet property="newsButton" destination="ify-3v-7sd" id="fU3-ZL-3MC"/>
+                        <outlet property="packagesButton" destination="bbz-Rl-ec7" id="FJx-D1-cLu"/>
+                        <outlet property="resultsButton" destination="qSK-Gg-VOk" id="agg-RV-OC7"/>
+                        <outlet property="rightIcon" destination="wc3-0i-Eos" id="ZhH-u2-tIR"/>
+                        <outlet property="routeMapButton" destination="HEb-Ol-nh6" id="f56-mu-8jK"/>
+                        <outlet property="testimonialsButton" destination="cwd-JF-F2A" id="tC0-Se-XsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Hospitals-->
+        <scene sceneID="oQu-wJ-hQE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Hospitals" id="M5j-zW-R37" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yl-PY-9tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="-92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lOt-hd-vWa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFH-YM-UZ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Xv-n4-2Ww">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.41960784309999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2re-ST-7eQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRS-WF-MJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--HealthPackages-->
+        <scene sceneID="ets-ww-lbE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HealthPackages" id="WPP-Zf-K2T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRk-3A-8Lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="625"/>
+        </scene>
+    </scenes>
+</document>
