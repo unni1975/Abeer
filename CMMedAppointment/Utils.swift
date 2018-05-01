@@ -9,6 +9,16 @@
 import Foundation
 import FontIcons
 
+public extension String {
+    func localized(withComment:String) -> String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: withComment)
+    }
+    
+    func localized() -> String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+}
+
 public extension UIButton {
     
     func setFontIcon(iconName:FontEnum, sizeFactor:CGFloat = 2.75) {
