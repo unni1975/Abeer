@@ -26,8 +26,16 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         super.viewDidLoad()
         if((urlString != nil) && urlString.count > 0) {
             let myURL = URL(string: urlString)
-            let myRequest = URLRequest(url: myURL!)
-            webView.load(myRequest)
+            //let myRequest = URLRequest(url: myURL!)
+            do {
+                var htmlString = try String(contentsOf: myURL!, encoding: String.Encoding.utf8)
+                htmlString = htmlString.replacingOccurrences(of: "<header ", with: "<header style=\"display: none;\" ")
+                webView.loadHTMLString(htmlString, baseURL: myURL)
+            }
+            catch {
+                print(error)
+            }
+            //webView.load(myRequest)
         }
     }
     
