@@ -27,7 +27,15 @@ class HealthPackagesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 85
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let browserVC = BrowserViewController(nibName: nil, bundle: nil)
+        let browserTitle = "HEALTH_DETAIL_TITLE".localized()
+        browserVC.title = browserTitle
+        browserVC.urlString = "http://calmoveindia.com/Package.aspx?PID=2"
+        self.navigationController?.pushViewController(browserVC, animated: true)
     }
     
 }
