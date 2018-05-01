@@ -254,6 +254,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Abeer Group" id="y7G-1w-YKo">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4Cz-4Q-t2u"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" id="ntJ-rN-AxU"/>
                     </navigationItem>
                     <connections>

@@ -25,6 +25,8 @@
 		852911CA2096ED40008FE844 /* HealthPackages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852911C82096ED40008FE844 /* HealthPackages.storyboard */; };
 		852911CC2096EE40008FE844 /* HealthPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852911CB2096EE40008FE844 /* HealthPackagesViewController.swift */; };
 		852911CF2096F35A008FE844 /* PackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852911CE2096F35A008FE844 /* PackageCell.swift */; };
+		852911D420972679008FE844 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852911D320972679008FE844 /* BrowserViewController.swift */; };
+		852911D7209747CE008FE844 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852911D5209747CD008FE844 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		852911C92096ED40008FE844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthPackages.storyboard; sourceTree = "<group>"; };
 		852911CB2096EE40008FE844 /* HealthPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPackagesViewController.swift; sourceTree = "<group>"; };
 		852911CE2096F35A008FE844 /* PackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCell.swift; sourceTree = "<group>"; };
+		852911D320972679008FE844 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		852911D6209747CD008FE844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F42802ED91C00B401E099EF /* Pods_CMMedAppointment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMMedAppointment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957750D9F7E9D5A7EB5A6E16 /* Pods-CMMedAppointment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMMedAppointment.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMMedAppointment/Pods-CMMedAppointment.release.xcconfig"; sourceTree = "<group>"; };
 		AA3841160FE18990EC6A0261 /* Pods-CMMedAppointment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMMedAppointment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMMedAppointment/Pods-CMMedAppointment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,9 +98,11 @@
 				852911C22093437B008FE844 /* LoginViewController.swift */,
 				852911C42096D81B008FE844 /* RegistrationViewController.swift */,
 				852911CB2096EE40008FE844 /* HealthPackagesViewController.swift */,
+				852911D320972679008FE844 /* BrowserViewController.swift */,
 				852911AB208F51CC008FE844 /* Utils.swift */,
 				852911A0208DC5A3008FE844 /* Assets.xcassets */,
 				852911A5208DC5A3008FE844 /* Info.plist */,
+				852911D5209747CD008FE844 /* Localizable.strings */,
 			);
 			path = CMMedAppointment;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				852911A1208DC5A3008FE844 /* Assets.xcassets in Resources */,
 				852911AF20906A75008FE844 /* Hospitals.storyboard in Resources */,
 				852911CA2096ED40008FE844 /* HealthPackages.storyboard in Resources */,
+				852911D7209747CE008FE844 /* Localizable.strings in Resources */,
 				852911B82091E33F008FE844 /* LoginAndRegistration.storyboard in Resources */,
 				8529119F208DC596008FE844 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852911D420972679008FE844 /* BrowserViewController.swift in Sources */,
 				852911CF2096F35A008FE844 /* PackageCell.swift in Sources */,
 				852911C32093437B008FE844 /* LoginViewController.swift in Sources */,
 				852911B520908C10008FE844 /* HospitalListViewController.swift in Sources */,
@@ -349,6 +357,14 @@
 				852911C92096ED40008FE844 /* Base */,
 			);
 			name = HealthPackages.storyboard;
+			sourceTree = "<group>";
+		};
+		852911D5209747CD008FE844 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852911D6209747CD008FE844 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
